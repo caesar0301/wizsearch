@@ -2,7 +2,7 @@
 """
 DuckDuckGo Search Demo
 
-This example demonstrates how to use the DuckDuckGoSearch class from wizagent.search
+This example demonstrates how to use the DuckDuckGoSearch class from wizsearch
 to perform web searches using the DuckDuckGo search engine.
 
 Requirements:

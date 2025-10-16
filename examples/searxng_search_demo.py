@@ -3,7 +3,7 @@
 SearxNG Search Demo
 
 This script demonstrates how to use the SearxNG search functionality
-with the WizAgent search interface.
+with the WizSearch interface.
 
 Prerequisites:
 - A running SearxNG instance (see docker-compose.yml for setup)

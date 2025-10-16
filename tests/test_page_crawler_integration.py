@@ -1,12 +1,12 @@
 """
-Integration tests for the wizagent.search.page_crawler module.
+Integration tests for the wizsearch.page_crawler module.
 
 These tests require network connectivity and external services.
 Mark with @pytest.mark.integration to distinguish from unit tests.
 """
 
 import asyncio
-from unittest.mock import MagicMock, patch, PropertyMock
+from unittest.mock import MagicMock, PropertyMock, patch
 
 import pytest
 
@@ -197,7 +197,7 @@ class TestPageCrawlerWithoutCrawl4AI:
         PageCrawler(url)
 
         # Mock the import to raise ImportError
-        with patch("wizagent.search.page_crawler.PageCrawler.crawl") as mock_crawl:
+        with patch("wizsearch.page_crawler.PageCrawler.crawl") as mock_crawl:
             # Simulate the actual behavior when crawl4ai is not installed
             async def mock_crawl_func():
                 return ""

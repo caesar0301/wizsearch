@@ -1,14 +1,34 @@
-# Mirasurf Python Template
+# WizSearch
 
-A minimal, production-ready template for building Python libraries with modern development practices.
+A unified Python library for searching across multiple search engines with a consistent interface.
 
-## 🚀 Quick Start
+## Features
+
+- **Multiple Search Engines**: Baidu, Bing, Brave, DuckDuckGo, Google, Google AI, SearxNG, Tavily, WeChat
+- **Unified Interface**: Single API for all search engines
+- **Page Crawling**: Built-in web page content extraction
+
+## Installation
 
 ```bash
-# Clone and customize
-git clone https://github.com/mirasurf/pytemplate.git my-library
-cd my-library
+pip install wizsearch
+```
 
+## Quick Start
+
+```python
+from wizsearch import WizSearch
+
+# Initialize with your preferred engine
+searcher = WizSearch(engine="google")
+results = searcher.search("your query")
+```
+
+Check the `examples/` directory for engine-specific usage.
+
+## Development
+
+```bash
 # Install development dependencies
 pip install -e ".[dev]"
 
@@ -16,17 +36,10 @@ pip install -e ".[dev]"
 make test
 ```
 
-## 📁 Project Structure
+## Status
 
-```
-├── pytemplate/            # Main package
-├── tests/                 # Test suite
-├── docs/                  # Documentation
-├── docker-compose.yml     # Development environment
-├── pyproject.toml         # Project configuration
-└── Makefile               # Development commands
-```
+🚧 Alpha - API may change
 
-## 📄 License
+## License
 
-MIT License - see [LICENSE](LICENSE) file for details. 
+MIT License - see [LICENSE](LICENSE) file for details.

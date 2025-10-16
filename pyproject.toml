@@ -3,9 +3,9 @@ requires = ["setuptools>=61.0", "wheel"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "pytemplate"
-version = "0.0.1"
-description = "Python app template"
+name = "wizsearch"
+version = "1.0.1"
+description = "Unified Python library for searching across multiple search engines"
 readme = "README.md"
 license = "MIT"
 authors = [
@@ -25,9 +25,15 @@ classifiers = [
     "Programming Language :: Python :: 3.12",
     "Topic :: Software Development :: Libraries :: Python Modules",
 ]
-requires-python = ">=3.12.6"
+requires-python = ">=3.11"
 dependencies = [
     "pydantic>=2.0.0",
+    "cogents-core>=0.1.9",
+    "google-genai>=1.29.0,<2.0.0",
+    "langchain-tavily>=0.2.11",
+    "ddgs>=9.4.0",
+    "tarzi>=0.1.6,<0.2",
+    "crawl4ai>=0.7.4",
 ]
 
 [project.optional-dependencies]
@@ -46,11 +52,11 @@ dev = [
 ]
 
 [project.urls]
-Homepage = "https://github.com/mirasurf/pytemplate"
+Homepage = "https://github.com/caesar0301/wizsearch"
 
 [tool.setuptools.packages.find]
 where = ["."]
-include = ["pytemplate*"]
+include = ["wizsearch*"]
 
 [tool.black]
 line-length = 120
@@ -68,7 +74,7 @@ markers = [
 ]
 
 [tool.coverage.run]
-source = ["pytemplate"]
+source = ["wizsearch"]
 
 [tool.coverage.report]
 exclude_lines = [

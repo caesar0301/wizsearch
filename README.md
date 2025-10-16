@@ -1,5 +1,7 @@
 # WizSearch
 
+[![PyPI version](https://img.shields.io/pypi/v/wizsearch.svg)](https://pypi.org/project/wizsearch/)
+
 A unified Python library for searching across multiple search engines with a consistent interface.
 
 ## Features

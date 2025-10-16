@@ -39,10 +39,6 @@ pip install -e ".[dev]"
 make test
 ```
 
-## Status
-
-🚧 Alpha - API may change
-
 ## License
 
 MIT License - see [LICENSE](LICENSE) file for details.

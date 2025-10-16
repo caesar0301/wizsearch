@@ -1,5 +1,6 @@
 # WizSearch
 
+[![CI](https://github.com/caesar0301/wizsearch/actions/workflows/ci.yml/badge.svg)](https://github.com/caesar0301/wizsearch/actions/workflows/ci.yml)
 [![PyPI version](https://img.shields.io/pypi/v/wizsearch.svg)](https://pypi.org/project/wizsearch/)
 
 A unified Python library for searching across multiple search engines with a consistent interface.

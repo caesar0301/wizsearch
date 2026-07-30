@@ -113,7 +113,7 @@ class GoogleAISearch(BaseSearch):
 
             # Generate content with Google Search tool in a thread pool
             logger.info(f"Performing Google AI search for query: {query}")
-            loop = asyncio.get_event_loop()
+            loop = asyncio.get_running_loop()
             response = await loop.run_in_executor(
                 None,
                 lambda: self.genai_client.models.generate_content(

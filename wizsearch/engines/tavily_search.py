@@ -142,7 +142,7 @@ class TavilySearch(BaseSearch):
 
             # Perform search in a thread pool to avoid blocking
             logger.info(f"Performing Tavily search for query: {query}")
-            loop = asyncio.get_event_loop()
+            loop = asyncio.get_running_loop()
             raw_response = await loop.run_in_executor(None, self._search_tool.invoke, query)
 
             response_time = (datetime.now() - start_time).total_seconds()

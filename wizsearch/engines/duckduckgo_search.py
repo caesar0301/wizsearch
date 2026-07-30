@@ -191,7 +191,7 @@ class DuckDuckGoSearch(BaseSearch):
 
             # Perform search in a thread pool to avoid blocking
             logger.info(f"Performing DuckDuckGo search for query: {query}")
-            loop = asyncio.get_event_loop()
+            loop = asyncio.get_running_loop()
 
             # Create a partial function with kwargs to pass to run_in_executor
             from functools import partial

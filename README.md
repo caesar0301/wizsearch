@@ -3,6 +3,9 @@
 [![CI](https://github.com/mirasoth/wizsearch/actions/workflows/ci.yml/badge.svg)](https://github.com/mirasoth/wizsearch/actions/workflows/ci.yml)
 [![PyPI version](https://img.shields.io/pypi/v/wizsearch.svg)](https://pypi.org/project/wizsearch/)
 
+> **⚠️ Deprecated: This project has been replaced by [tarzi](https://github.com/mirasoth/tarzi).**
+> WizSearch's functionalities have been integrated into the tarzi library. Please use tarzi directly for all search and crawling features. This repository is no longer actively maintained.
+
 A unified Python library for searching across multiple search engines with a consistent interface. WizSearch enables concurrent multi-engine searches with intelligent result merging, page crawling capabilities, and optional semantic search integration.
 
 ## Features
